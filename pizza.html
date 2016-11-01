@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .one-half,
+        .one-fourth,
+        .one-third {
+            box-sizing: border-box;
+            float: left;
+            padding: 0 2px;
+        }
+        .full-width{ width: 100%; }
+        .one-half { width: 50% }
+        .one-fourth { width: 25% }
+        .one-third { width: 33.333333333%; }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .center { text-align: center; }
+        .topping {
+            display: block;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="center">Order A Pizza!</h1>
+    <form action="">
+            <select class="full-width">
+                <option value="" selected disabled>Crust</option>
+                <option value="">Stuffed</option>
+                <option value="">Traditional</option>
+            </select>
+            <select name="" id="" class="full-width">
+                <option selected disabled value="">Pickup Or Delivery?</option>
+                <option value="">Pickup</option>
+                <option value="">Delivery</option>
+            </select>
+            <h2>Toppings</h2>
+            <label class="topping"><input type="checkbox" name="toppings">Pepperoni</label>
+            <label class="topping"><input type="checkbox" name="toppings">Green Peppers</label>
+            <label class="topping"><input type="checkbox" name="toppings">Mushrooms</label>
+            <label class="topping"><input type="checkbox" name="toppings">Olives</label>
+    </form>
+</div>
+</body>
+</html>
